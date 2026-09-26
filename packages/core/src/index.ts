@@ -18,7 +18,8 @@ export { DerivationEngine } from './derivation/engine.js';
 export type { AddressInfo, DerivationConfig } from './derivation/types.js';
 
 // Phase 2: Electrum Client
-// export { ElectrumClient } from './electrum/client.js';
+export { ElectrumClient } from './electrum/client.js';
+export type * from './electrum/protocol.js';
 
 // Phase 3: Wallet Sync
 // export { WalletSync } from './sync.js';
