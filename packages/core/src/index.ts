@@ -26,7 +26,10 @@ export { WalletSync } from './sync.js';
 export type { SyncState, AddressSyncResult } from './sync.js';
 
 // Phase 4: Live Chaff Synthesis
-// export { LiveChaffEngine } from './chaff/lcs.js';
+export { LiveChaffSource } from './chaff/mempool.js';
+export { FeatureMatcher } from './chaff/matcher.js';
+export { QueryAssembler } from './chaff/assembler.js';
+export type * from './chaff/types.js';
 
 // Phase 5: Persistence Scheduler
 // export { PersistenceScheduler } from './persistence/scheduler.js';
