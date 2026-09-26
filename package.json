@@ -1,0 +1,34 @@
+{
+  "name": "winnow",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A chaff-hardened private sync protocol for Electrum-style Bitcoin wallets",
+  "keywords": [
+    "bitcoin",
+    "privacy",
+    "electrum",
+    "chaff",
+    "winnow",
+    "bip32",
+    "wallet"
+  ],
+  "license": "MIT",
+  "workspaces": [
+    "packages/core",
+    "packages/ui"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "test:core": "npm run test -w packages/core",
+    "test:ui": "npm run test -w packages/ui",
+    "test:reaper": "cd packages/reaper && python -m pytest",
+    "test:all": "npm run test && npm run test:reaper",
+    "dev": "npm run dev -w packages/ui",
+    "lint": "npm run lint --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

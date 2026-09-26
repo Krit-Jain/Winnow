@@ -1,0 +1,66 @@
+/* WINNOW Demo Wallet — Base Styles (Placeholder) */
+/* Full cyberpunk design system will be built in Phase 7 */
+
+:root {
+  --color-bg: #0a0a0f;
+  --color-surface: #12121a;
+  --color-primary: #00f0ff;
+  --color-accent: #ff00aa;
+  --color-text: #e0e0e8;
+  --color-text-muted: #6b6b80;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-family: var(--font-mono);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.status {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 0, 170, 0.3);
+  border-radius: 4px;
+  background: rgba(255, 0, 170, 0.05);
+}

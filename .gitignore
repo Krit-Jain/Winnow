@@ -1,0 +1,61 @@
+# === Node.js ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# === Build outputs ===
+dist/
+build/
+*.tsbuildinfo
+
+# === Environment & secrets ===
+.env
+.env.local
+.env.*.local
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+*.egg
+.pytest_cache/
+.mypy_cache/
+venv/
+.venv/
+env/
+
+# === SQLite data files ===
+packages/core/data/
+packages/reaper/data/
+
+# === Reaper model artifacts ===
+packages/reaper/models/
+
+# === Design document (internal reference only) ===
+WINNOW_BOSS_Battle_Design.md
+
+# === Coverage ===
+coverage/
+.nyc_output/
+htmlcov/
+
+# === Misc ===
+*.log
+*.pid
+*.seed
