@@ -22,7 +22,8 @@ export { ElectrumClient } from './electrum/client.js';
 export type * from './electrum/protocol.js';
 
 // Phase 3: Wallet Sync
-// export { WalletSync } from './sync.js';
+export { WalletSync } from './sync.js';
+export type { SyncState, AddressSyncResult } from './sync.js';
 
 // Phase 4: Live Chaff Synthesis
 // export { LiveChaffEngine } from './chaff/lcs.js';
