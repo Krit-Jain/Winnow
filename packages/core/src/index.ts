@@ -14,8 +14,8 @@
  */
 
 // Phase 1: Derivation Engine
-// export { DerivationEngine } from './derivation/engine.js';
-// export type { AddressInfo, DerivationConfig } from './derivation/types.js';
+export { DerivationEngine } from './derivation/engine.js';
+export type { AddressInfo, DerivationConfig } from './derivation/types.js';
 
 // Phase 2: Electrum Client
 // export { ElectrumClient } from './electrum/client.js';
